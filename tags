@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddAuthorIdToPosts	db/migrate/20160113011820_add_author_id_to_posts.rb	/^class AddAuthorIdToPosts < ActiveRecord::Migration$/;"	c
+AddPostStatusToPosts	db/migrate/20160113011150_add_post_status_to_posts.rb	/^class AddPostStatusToPosts < ActiveRecord::Migration$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:BlogFlash
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Author	app/models/author.rb	/^class Author < ActiveRecord::Base$/;"	c
+AuthorsController	app/controllers/authors_controller.rb	/^class AuthorsController < ApplicationController$/;"	c
+AuthorsHelper	app/helpers/authors_helper.rb	/^module AuthorsHelper$/;"	m
+BlogFlash	config/application.rb	/^module BlogFlash$/;"	m
+CreateAuthors	db/migrate/20160113011041_create_authors.rb	/^class CreateAuthors < ActiveRecord::Migration$/;"	c
+CreatePosts	db/migrate/20151230232412_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration$/;"	c
+Post	app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c
+PostsController	app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	c
+by_author	app/models/post.rb	/^  def self.by_author(author_id)$/;"	F	class:Post
+change	db/migrate/20151230232412_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
+change	db/migrate/20160113011041_create_authors.rb	/^  def change$/;"	f	class:CreateAuthors
+change	db/migrate/20160113011150_add_post_status_to_posts.rb	/^  def change$/;"	f	class:AddPostStatusToPosts
+change	db/migrate/20160113011820_add_author_id_to_posts.rb	/^  def change$/;"	f	class:AddAuthorIdToPosts
+create	app/controllers/posts_controller.rb	/^  def create$/;"	f	class:PostsController
+edit	app/controllers/posts_controller.rb	/^  def edit$/;"	f	class:PostsController
+from_today	app/models/post.rb	/^  def self.from_today$/;"	F	class:Post
+index	app/controllers/posts_controller.rb	/^  def index$/;"	f	class:PostsController
+is_title_case	app/models/post.rb	/^  def is_title_case$/;"	f	class:Post
+make_title_case	app/models/post.rb	/^  def make_title_case$/;"	f	class:Post
+new	app/controllers/posts_controller.rb	/^  def new$/;"	f	class:PostsController
+old_news	app/models/post.rb	/^  def self.old_news$/;"	F	class:Post
+post_params	app/controllers/posts_controller.rb	/^  def post_params$/;"	f	class:PostsController
+show	app/controllers/authors_controller.rb	/^  def show$/;"	f	class:AuthorsController
+show	app/controllers/posts_controller.rb	/^  def show$/;"	f	class:PostsController
+system!	bin/setup	/^def system!(*args)$/;"	f
+system!	bin/update	/^def system!(*args)$/;"	f
+update	app/controllers/posts_controller.rb	/^  def update$/;"	f	class:PostsController
