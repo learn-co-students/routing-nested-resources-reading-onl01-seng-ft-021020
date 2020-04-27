@@ -1,11 +1,15 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    if params[:author_id]
+      @posts = Author.find_by_id(params[:author_id]).posts
+    else
+      @posts = Post.all
+    end
   end
 
   def show
-    @post = Post.find(params[:id])
+    @post = Post.find_by_id(params[:id])
   end
 
   def new
@@ -19,18 +23,22 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
+    @post = Post.find_by_id(params[:id])
     @post.update(post_params)
     redirect_to post_path(@post)
   end
 
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.find_by_id(params[:id])
   end
 
-private
+  private
 
   def post_params
     params.require(:post).permit(:title, :desription, :post_status, :author_id)
   end
+
+  # def set_post
+  #   @post = Post.find_by_id(params[:id])
+  # end
 end
